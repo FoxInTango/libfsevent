@@ -25,4 +25,33 @@
 #define _libfsevent_h_
 #include "fs_node.h"
 #include "fs_event.h"
+
+#include <libmodule/libmodule.h>
+#include <libmodel/libmodel.h>
+#include <libcpp/libcpp.h>
+using namespace foxintango;
+
+ /*
+ struct libioevent_model_s {
+     struct struct_header_s header;
+     char* name;
+     char* engines;
+     char* handlers;
+     struct io_event_endpoint_model_s* endpoint_models;
+ };
+ */
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+/** Load FSEngine   Modules
+ *  Load FSBusiness Modules
+ **/
+int foxintangoAPI libfsevent_startup(const Model& model);
+int foxintangoAPI libfsevent_reload(const Model& model);
+int foxintangoAPI libfsevent_shutdown();
+
+#ifdef __cplusplus
+}
+#endif
 #endif
