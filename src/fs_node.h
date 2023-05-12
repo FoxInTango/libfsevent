@@ -24,6 +24,9 @@
 #ifndef _fs_node_h_
 #define _fs_node_h_
 #include "fs_event.h"
+#include <libcpp/libcpp.h>
+
+namespaceBegin(foxintango)
 const int FS_NODE_DEPTH_MAX = 0b10000001;
 const int FS_NODE_DEPTH_LNK = 0b10000010;
 
@@ -58,5 +61,5 @@ public:
   fs_node *childNodeAt(const unsigned int &index);
   fs_node *childNodeWithName(char *name, const unsigned int &depth);
 };
-
+namespaceEnd
 #endif // !

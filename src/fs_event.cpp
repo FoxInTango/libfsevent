@@ -22,9 +22,11 @@
  * IN THE SOFTWARE.
  */
 #include "fs_event.h"
-#include <string>
+
+using namespace foxintango;
+
 typedef struct _fs_event_implement{
-   std::string name;
+   String name;
 }fs_event_implement;
 
 fs_event::fs_event(){
@@ -36,7 +38,7 @@ fs_event::~fs_event(){
 }
 
 const char* fs_event::name(){
-    return implement ?  ((fs_event_implement*)implement)->name.c_str() : 0;
+    return implement ?  ((fs_event_implement*)implement)->name.byte() : 0;
 }
 
 

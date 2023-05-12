@@ -21,8 +21,12 @@
  * FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
  * IN THE SOFTWARE.
  */
- #ifndef _fs_event_h_
+#ifndef _fs_event_h_
 #define _fs_event_h_
+#include <libstring/libstring.h>
+#include <libcpp/libcpp.h>
+
+namespaceBegin(foxintango)
 class fs_event;
 typedef void (*fs_event_callback)(const fs_event&);
 class fs_event{
@@ -34,4 +38,5 @@ public:
 public:
 const char* name();
 };
+namespaceEnd
 #endif

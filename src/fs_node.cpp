@@ -22,6 +22,8 @@
  * IN THE SOFTWARE.
  */
 #include "fs_node.h"
+using namespace foxintango;
+
 #include <sys/stat.h>
 #include <sys/inotify.h> 
 #include <map>
