@@ -38,7 +38,7 @@ fs_event::~fs_event(){
 }
 
 const char* fs_event::name(){
-    return implement ?  ((fs_event_implement*)implement)->name.byte() : 0;
+    return 0; //return implement ?  ((fs_event_implement*)implement)->name.byte() : 0;
 }
 
 
