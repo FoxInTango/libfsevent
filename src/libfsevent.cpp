@@ -1,10 +1,10 @@
 #include "libfsevent.h"
 
-int libfsevent_startup(const Model& model) {
+int libfsevent_startup() {
     return 0;
 }
 
-int libfsevent_reload(const Model& model){
+int libfsevent_reload(){
     return 0;
 }
 

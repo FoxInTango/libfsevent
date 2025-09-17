@@ -27,7 +27,7 @@
 #include "fs_event.h"
 
 #include <libmodule/libmodule.h>
-#include <libmodel/libmodel.h>
+//#include <libmodel/libmodel.h>
 #include <libcpp/libcpp.h>
 using namespace foxintango;
 
@@ -47,8 +47,8 @@ extern "C" {
 /** Load FSEngine   Modules
  *  Load FSBusiness Modules
  **/
-int foxintangoAPI libfsevent_startup(const Model& model);
-int foxintangoAPI libfsevent_reload(const Model& model);
+int foxintangoAPI libfsevent_startup();
+int foxintangoAPI libfsevent_reload();
 int foxintangoAPI libfsevent_shutdown();
 
 #ifdef __cplusplus
